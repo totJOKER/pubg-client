@@ -1,0 +1,154 @@
+.title-section {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-section::after {
+    content: '';
+
+    position: absolute;
+    bottom: 99vh;
+    right: 0;
+
+    z-index: 1;
+    width: 32vw;
+    height: 4vw;
+    background-image: url("/images/block-vi.svg");
+    background-size: 100% 100%;
+}
+
+.title-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.title-h1 {
+    font-size: 2.5vw;
+}
+
+.title-p {
+    font-size: 1.5vw;
+    color: #BBB;
+}
+
+.title-p-div a {
+    font-size: 2vw;
+    margin-bottom: 1vh;
+    transition: 0.3s;
+}
+
+.title-p-div a:hover {
+    padding-left: 1vw;
+}
+
+.title-p-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-scroll-but {
+    display: flex;
+    gap: 2vw;
+}
+
+.title-scroll-p {
+    font-size: 2vw;
+}
+
+.title-img {
+    height: 100%;
+}
+
+.about-section {
+    width: 100%;
+    height: 100vh;
+
+    background-color: #3D1B5A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-h1 {
+    font-size: 2.5vw;
+}
+
+.about-p {
+    font-size: 1.5vw;
+    color: #BCBCBC;
+}
+
+.about-logo {
+    width: 40%;
+}
+.m-about {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 780px) {
+    .about-logo {
+        width: 100%;
+    }
+    
+    .title-p-div a {
+        font-size: 5vw;
+        margin-bottom: 1vh;
+        transition: 0.3s;
+    }
+
+    .title-container {
+        width: 80%;
+    }
+
+    .title-h1 {
+        font-size: 7vw;
+    }
+
+    .title-p {
+        font-size: 3vw;
+        color: #BBB;
+        margin-bottom: 6vh;
+    }
+
+    .title-scroll-p {
+        font-size: 5vw;
+    }
+
+    .about-section {
+        width: 100%;
+        height: 100vh;
+        padding: 15vw 5vw;
+
+        background-color: #3D1B5A;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-h1 {
+        font-size: 6vw;
+    }
+
+    .about-p {
+        font-size: 3.5vw;
+        color: #BCBCBC;
+    }
+    .m-about {
+        font-size: 3.5vw;
+    }
+}

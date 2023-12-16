@@ -1,0 +1,143 @@
+.gl__footer {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    background-color: #3D1B5A50;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    z-index: 1;
+}
+
+.gl__footer-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.gl__e-mail-h2 {
+    font-size: 2vw;
+    color: white;
+}
+
+.gl__footer-logo {
+    height: 100%;
+}
+
+.gl__press-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.gl__press-info-container {
+    display: flex;
+    gap: 1vw;
+
+    width: 50%;
+}
+
+.gl__press {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 30%;
+}
+
+.gl__press-contact {
+    color: white;
+    font-weight: 200;
+}
+
+.gl__press-info-container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.gl__category-name {
+    color: white;
+}
+
+.gl__description-name {
+    color: rgb(196, 196, 196);
+    font-size: 1vw;
+}
+
+.gl__social-container {
+    display: flex;
+    gap: 2vw;
+}
+
+.gl__social-name {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.gl__other-footer-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    border-top: 2px solid white;
+}
+
+.gl__footer-name {
+    color: white;
+    font-weight: 200;
+}
+
+.gl__footer-documents {
+    color: white;
+}
+
+@media screen and (max-width: 780px) {
+    .gl__e-mail-h2 {
+        font-size: 4vw;
+    }
+
+    .gl__press-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vh;
+    }
+
+    .gl__press-contact {
+        color: white;
+        font-size: 5vw;
+        font-weight: 200;
+    }
+
+    .gl__category-name {
+        color: white;
+        font-size: 4vw;
+    }
+
+    .gl__description-name {
+        color: rgb(196, 196, 196);
+        font-size: 4vw;
+    }
+
+    .gl__press-info-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .gl__social-name {
+        color: white;
+        font-size: 3vw;
+        text-align: end;
+    }
+
+    .gl__footer-documents,
+    .gl__footer-name {
+        color: white;
+        font-size: 4vw;
+    }
+}

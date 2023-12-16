@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-size: 1vw;
+    font-family: 'Radiotechnika';
+
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h3 {
+    font-family: 'Poppins';
+}
+
+a,
+a p {
+    transition: 0.3s;
+}
+
+a {
+    user-select: none;
+}
+
+a:hover,
+a:hover p {
+    color: #C6426E;
+}
+
+@font-face {
+    font-family: 'Radiotechnika';
+    src: url(/fonts/Radiotechnika.ttf);
+}
+
+@font-face {
+    font-family: 'Disket-mono';
+    src: url(/fonts/Disket-Mono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Disket-mono-bold';
+    src: url(/fonts/Disket-Mono-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.colorRed {
+    color: red;
+}
+
+h2 {
+    font-family: 'Disket-mono';
+    color: #C6426E;
+}
+
+html,
+body,
+#root,
+.page {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #21232B;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 0 4vw;
+}
+
+.components {
+    position: relative;
+    z-index: 2;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DD94FF;
+    border-radius: 1vh;
+}
+
+@media screen and (max-width: 780px) {
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.active {
+    color: #C6426E;
+}
+
+.show {
+    animation-name: showCard;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes showCard {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,28 @@
+.loader-box {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21232B;
+
+    /* animation-name: loader;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1; */
+}
+/* 
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+} */

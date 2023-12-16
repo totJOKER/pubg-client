@@ -1,0 +1,19 @@
+.categories {
+    width: 100%;
+    display: flex;
+    padding: 4vw;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.categories a {
+    transition: 0.3s ease-in-out;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.categories a:hover {
+    background-color: #C6426E;
+    color: white;
+}

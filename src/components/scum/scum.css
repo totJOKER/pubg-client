@@ -1,0 +1,171 @@
+.scam-page {
+    padding-top: 15vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scam-h1 {
+    font-size: 2vw;
+    letter-spacing: 0.3vw;
+    margin-bottom: 3vh;
+}
+
+.scam-list {
+    padding: 0 4vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.scam-card {
+    width: 16vw;
+    height: 20vw;
+
+    background-color: white;
+    border-radius: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5vw;
+}
+
+.scam-image {
+    width: 100%;
+    height: 23vw;
+    border-radius: 1vw;
+
+    background-size: 100%;
+}
+
+.scam-image::after {
+    content: '';
+}
+
+.scam-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 0.5vw;
+}
+
+.scam-info-h1 {
+    color: #151515;
+}
+
+.scam-info-p {
+    font-size: 1vw;
+    color: #313131;
+    display: flex;
+}
+
+.scam-button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0.5vw;
+}
+
+.scam-div-p {
+    font-family: 'Disket-mono-Bold';
+    color: #151515;
+}
+
+.scam-link {
+    padding: 0.4vw 1.5vw;
+    background-color: #C6426E;
+    border-radius: 0.5vw;
+    font-size: 0.8vw;
+
+    transition: 0.3s;
+}
+
+.scam-link:hover {
+    background-color: white;
+
+    box-shadow: 0 0 10px #17171740;
+}
+
+@media screen and (max-width: 780px) {
+    .scam-h1 {
+        font-size: 4vw;
+        letter-spacing: 0.6vw;
+        margin-bottom: 3vh;
+    }
+
+    .scam-card {
+        width: 36vw;
+        height: 35vw;
+
+        background-color: white;
+        border-radius: 1vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0.5vw;
+    }
+
+    .scam-image {
+        width: 100%;
+        height: 20.25vw;
+        border-radius: 1vw;
+
+        background-size: 100% 100%;
+    }
+
+    .scam-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        padding: 1vw;
+    }
+
+    .scam-info-h1 {
+        color: #151515;
+        font-size: 2.5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .scam-info-p {
+        font-size: 2vw;
+        color: #313131;
+        display: flex;
+    }
+
+    .scam-button-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scam-div-p {
+        font-family: 'Disket-mono-Bold';
+        color: #151515;
+        font-size: 2vw;
+    }
+
+    .scam-link {
+        padding: 0.8vw 3vw;
+        background-color: #C6426E;
+        border-radius: 1vw;
+        font-size: 2vw;
+
+        transition: 0.3s;
+    }
+
+    .scam-link:hover {
+        background-color: white;
+
+        box-shadow: 0 0 10px #17171740;
+    }
+}

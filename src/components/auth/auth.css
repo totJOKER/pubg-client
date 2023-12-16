@@ -1,0 +1,159 @@
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-bottom: 3vh;
+}
+
+.add-input {
+    width: 50%;
+    padding: 0.5vw 2vw;
+    border-radius: 0.5vw;
+    border: 1px solid #C6426E;
+    background-color: #ffffff10;
+
+}
+
+.add-button {
+    padding: 0.5vw;
+    background-color: #ffffff10;
+    border: none;
+    border-radius: 0.5vw;
+
+    transition: 0.2s ease-in-out;
+}
+
+.add-button:hover {
+    background-color: #C6426E;
+    color: white;
+}
+
+.category-add {
+    padding-bottom: 0.5vw;
+    width: fit-content;
+    font-size: 1.5vw;
+    border-bottom: 4px solid #C6426E;
+}
+
+.login {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h1 {
+    width: 100%;
+    text-align: center;
+
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.login-container a {
+    width: 100%;
+    text-align: end;
+}
+
+.log-inp {
+    background-color: #FFFFFF10;
+    border: none;
+    padding: 0.5vw;
+
+    border-radius: 0.5vw;
+}
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-bottom: 3vh;
+}
+
+
+.del-button {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.5vw;
+    color: #C6426E;
+    padding: 0.5vw;
+    letter-spacing: 0.5vw;
+    transition: 0.2s ease-in-out;
+    border: none;
+}
+
+.del-button:hover {
+    background-color: #C6426E;
+    color: white;
+}
+
+.tournaments-admin {
+    width: 100%;
+}
+
+.rating-update-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.rating-card {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+    .login-container h1 {
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .login-container {
+        padding: 0 5vw;
+    }
+    .log-inp {
+        width: 100%;
+        font-size: 5vw;
+        padding: 3vw;
+        border-radius: 2vw;
+    }
+    .categories a {
+        font-size: 3vw;
+    }
+    .category-add {
+        font-size: 4vw;
+    }
+    .add-container {
+        gap: 1vh;
+    }
+    .add-container label {
+        font-size: 4vw;
+    }
+    .add-input {
+        font-size: 3vw;
+    }
+    .add-button {
+        font-size: 4vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .del-button {
+        font-size: 3vw;
+    }
+    .tour-card h1 {
+        font-size: 3vw;
+    }
+}
