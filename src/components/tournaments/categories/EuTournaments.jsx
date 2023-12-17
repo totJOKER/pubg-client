@@ -50,7 +50,7 @@ export default function EuTournaments() {
                                 <h3 className="tour-info-other fw400">Guarantee - {data.guarantee}</h3>
                                 <h3 className="tour-info-other fw400">Invitations - {data.invite ? 'yes' : 'none'}</h3>
                                 <div className="tour-button-box">
-                                    <a href={data.link} title={data.link}>Discord</a>
+                                    <a href={data.link} title={data.link}>Link</a>
                                 </div>
                             </div>
                         </li>
