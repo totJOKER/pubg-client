@@ -75,5 +75,5 @@ export default function AllTournaments() {
                 } else {
                     return;
                 }
-    )
+        }
 }
