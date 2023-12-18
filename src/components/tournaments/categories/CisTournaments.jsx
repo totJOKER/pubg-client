@@ -43,7 +43,7 @@ export default function AllTournaments() {
 
     return (
         <ol className="tour-list">
-            {ratesTour.map(data => (
+            {ratesTour.map(data => {
                 if (data.regionCis == true) {
                     return (
                         <li className="tour-card show" id={data.regionCis}>
