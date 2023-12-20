@@ -113,7 +113,7 @@
 
     .news-card {
         width: 90vw;
-        height: 55vh;
+        min-height: 40vh;
 
         background-color: white;
         border-radius: 2vw;
@@ -121,15 +121,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 0.5vw;
+        padding: 1.5vw;
     }
 
     .news-image {
         width: 100%;
-        height: 20.25vw;
-        border-radius: 1vw;
+        height: 30vh;
+        border-radius: 2vw;
 
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: top;
     }
 
     .news-info {
