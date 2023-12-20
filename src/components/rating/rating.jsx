@@ -22,33 +22,6 @@ ChartJS.register(
     Legend
 );
 
-export const options = {
-    plugins: {
-        legend: {
-            position: 'top',
-        },
-    },
-    indexAxis: 'y',
-    scales: {
-        x: {
-            stacked: true,
-            max: 1000,
-            min: 0,
-            ticks: {
-                stepSize: 0.5
-            }
-        },
-        y: {
-            stacked: true,
-            max: 10,
-            min: 0,
-            ticks: {
-                stepSize: 0.5
-            }
-        },
-    }
-};
-
 
 export function Rating() {
     let [rating, setRating] = React.useState([])
@@ -73,6 +46,32 @@ export function Rating() {
     topRating.map(data => labels.push(data.name))
     console.log(currentRating);
 
+    const options = {
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+        },
+        indexAxis: 'y',
+        scales: {
+            x: {
+                stacked: true,
+                max: currentRating.map((el, i) => { if (i == 0) Math.floor(+currentRating.tour + +currentRating.comm + +currentRating.prize) }),
+                min: 0,
+                ticks: {
+                    stepSize: 0.5
+                }
+            },
+            y: {
+                stacked: true,
+                max: 10,
+                min: 0,
+                ticks: {
+                    stepSize: 0.5
+                }
+            },
+        }
+    };
 
     const data = {
         labels,
@@ -83,12 +82,12 @@ export function Rating() {
                 backgroundColor: '#9F3FFF',
             },
             {
-                label: 'PRIZEPOOL ($)',
+                label: 'PRIZEPOOL',
                 data: topRating.map(data => data.prize),
                 backgroundColor: '#DC07FF',
             },
             {
-                label: 'COMMUNITY',
+                label: 'community',
                 data: topRating.map(data => data.comm),
                 backgroundColor: '#DD94FF',
             },
