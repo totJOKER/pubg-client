@@ -76,7 +76,7 @@ export function RatingAll() {
                 backgroundColor: '#9F3FFF',
             },
             {
-                label: 'PRIZEPOOL',
+                label: 'PRIZEPOOL ($)',
                 data: currentRating.map(data => data.prize),
                 backgroundColor: '#DC07FF',
             },
