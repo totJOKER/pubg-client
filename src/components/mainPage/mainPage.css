@@ -85,6 +85,7 @@
 
 .about-p {
     font-size: 1.5vw;
+    line-height: 3vh;
     color: #BCBCBC;
 }
 
@@ -147,6 +148,7 @@
     .about-p {
         font-size: 3.5vw;
         color: #BCBCBC;
+        line-height: 2vh;
     }
     .m-about {
         font-size: 3.5vw;
