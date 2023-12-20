@@ -83,12 +83,12 @@ export function Rating() {
                 backgroundColor: '#9F3FFF',
             },
             {
-                label: 'PRIZEPOOL',
+                label: 'PRIZEPOOL ($)',
                 data: topRating.map(data => data.prize),
                 backgroundColor: '#DC07FF',
             },
             {
-                label: 'community',
+                label: 'COMMUNITY',
                 data: topRating.map(data => data.comm),
                 backgroundColor: '#DD94FF',
             },
