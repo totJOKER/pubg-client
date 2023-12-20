@@ -22,32 +22,6 @@ ChartJS.register(
     Legend
 );
 
-export const options = {
-    plugins: {
-        legend: {
-            position: 'top',
-        },
-    },
-    indexAxis: 'y',
-    scales: {
-        x: {
-            stacked: true,
-            max: 1000,
-            min: 0,
-            ticks: {
-                stepSize: 0.5
-            }
-        },
-        y: {
-            stacked: true,
-            min: 0,
-            ticks: {
-                stepSize: 0.5
-            }
-        },
-    }
-};
-
 
 export function RatingAll() {
     let [rating, setRating] = React.useState([])
@@ -67,6 +41,31 @@ export function RatingAll() {
     currentRating.map(data => labels.push(data.name))
     console.log(currentRating);
 
+    const options = {
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+        },
+        indexAxis: 'y',
+        scales: {
+            x: {
+                stacked: true,
+                max: currentRating.map((el, i) => { if (i == 0) Math.floor(+currentRating.tour + +currentRating.comm + +currentRating.prize) }),
+                min: 0,
+                ticks: {
+                    stepSize: 0.5
+                }
+            },
+            y: {
+                stacked: true,
+                min: 0,
+                ticks: {
+                    stepSize: 0.5
+                }
+            },
+        }
+    };
 
     const data = {
         labels,
@@ -77,12 +76,12 @@ export function RatingAll() {
                 backgroundColor: '#9F3FFF',
             },
             {
-                label: 'PRIZEPOOL ($)',
+                label: 'PRIZEPOOL',
                 data: currentRating.map(data => data.prize),
                 backgroundColor: '#DC07FF',
             },
             {
-                label: 'COMMUNITY',
+                label: 'community',
                 data: currentRating.map(data => data.comm),
                 backgroundColor: '#DD94FF',
             },
@@ -93,4 +92,5 @@ export function RatingAll() {
 
     );
 }
+
 
