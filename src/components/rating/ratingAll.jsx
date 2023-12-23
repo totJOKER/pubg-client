@@ -81,7 +81,7 @@ export function RatingAll() {
                 backgroundColor: '#DC07FF',
             },
             {
-                label: 'community',
+                label: 'COMMUNITY',
                 data: currentRating.map(data => data.comm),
                 backgroundColor: '#DD94FF',
             },
