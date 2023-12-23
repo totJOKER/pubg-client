@@ -87,7 +87,7 @@ export function Rating() {
                 backgroundColor: '#DC07FF',
             },
             {
-                label: 'community',
+                label: 'COMMUNITY',
                 data: topRating.map(data => data.comm),
                 backgroundColor: '#DD94FF',
             },
