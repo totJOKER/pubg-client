@@ -72,7 +72,7 @@ export function RatingAll() {
         datasets: [
             {
                 label: 'TOURNAMENT',
-                data: currentRating.map(data => data.tour),
+                data: currentRating.map(data => data.tour * 100),
                 backgroundColor: '#9F3FFF',
             },
             {
