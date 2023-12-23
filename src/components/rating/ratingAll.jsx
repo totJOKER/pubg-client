@@ -21,7 +21,7 @@ ChartJS.register(
     Tooltip,
     Legend
 );
-
+ChartJS.defaults.font.size = 10;
 
 export function RatingAll() {
     let [rating, setRating] = React.useState([])
@@ -54,14 +54,14 @@ export function RatingAll() {
                 max: currentRating.map((el, i) => { if (i == 0) Math.floor(+currentRating.tour + +currentRating.comm + +currentRating.prize) }),
                 min: 0,
                 ticks: {
-                    stepSize: 0.5
+                    stepSize: 100
                 }
             },
             y: {
                 stacked: true,
                 min: 0,
                 ticks: {
-                    stepSize: 0.5
+                    stepSize: 100
                 }
             },
         }
